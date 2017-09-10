@@ -1,0 +1,63 @@
+{
+	"variables": [],
+	"info": {
+		"name": "gst",
+		"_postman_id": "d908074b-9149-b173-fad4-0c4938a61b1f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "gst",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/gst/_search?amount=100&gstType=REMOVEGST&gstPercentage=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"gst",
+						"_search"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "100",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "gstType",
+							"value": "REMOVEGST",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "gstPercentage",
+							"value": "5",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "http://localhost:8080/gst/_search?amount=100&gstType=REMOVEGST&gstPercentage=5"
+			},
+			"response": []
+		}
+	]
+}
