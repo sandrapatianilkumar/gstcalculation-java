@@ -24,12 +24,12 @@ public class GstServiceImpl implements GstService {
 			// Add GST
 			gstAmount = (double) Math.round(((amount * gstPercentage) / 100) * 10 / 10);
 			netPrice = (double) Math.round((amount + gstAmount) * 10 / 10);
-			gstType="ADDGST";
+			gstType = "ADDGST";
 		} else {
 			// Remove GST
 			gstAmount = (double) Math.round((amount - (amount * (100 / (100 + gstPercentage)))) * 10 / 10);
 			netPrice = (double) Math.round((amount - gstAmount) * 10 / 10);
-			gstType="REMOVEGST";
+			gstType = "REMOVEGST";
 		}
 
 		gst.setAmount(amount);
@@ -39,5 +39,4 @@ public class GstServiceImpl implements GstService {
 		gst.setNetPrice(netPrice);
 		return gst;
 	}
-
 }
